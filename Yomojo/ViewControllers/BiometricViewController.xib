@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BiometricViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-Pd-LEl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Zp-xF-bD1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoadingImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="MUu-px-9az">
+                            <rect key="frame" x="0.0" y="134" width="375" height="588"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-new.png" translatesAutoresizingMaskIntoConstraints="NO" id="MIU-B9-R9u">
+                            <rect key="frame" x="87.666666666666686" y="62" width="200" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="vOq-xN-8oJ"/>
+                                <constraint firstAttribute="width" constant="200" id="xg6-E0-VGX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6Zp-xF-bD1" firstAttribute="leading" secondItem="MUu-px-9az" secondAttribute="leading" id="22D-DN-UTp"/>
+                        <constraint firstItem="6Zp-xF-bD1" firstAttribute="top" secondItem="sLM-Pd-LEl" secondAttribute="top" id="HFt-KZ-5dn"/>
+                        <constraint firstItem="cpI-4y-jih" firstAttribute="bottom" secondItem="MUu-px-9az" secondAttribute="bottom" constant="56" id="UTM-xQ-1rn"/>
+                        <constraint firstItem="MIU-B9-R9u" firstAttribute="top" secondItem="cpI-4y-jih" secondAttribute="top" constant="18" id="gWv-Ey-wF1"/>
+                        <constraint firstItem="MUu-px-9az" firstAttribute="top" secondItem="MIU-B9-R9u" secondAttribute="bottom" id="rn8-BR-9gQ"/>
+                        <constraint firstAttribute="bottom" secondItem="6Zp-xF-bD1" secondAttribute="bottom" id="tTZ-eT-q71"/>
+                        <constraint firstItem="6Zp-xF-bD1" firstAttribute="leading" secondItem="sLM-Pd-LEl" secondAttribute="leading" id="uqN-AV-dhU"/>
+                        <constraint firstItem="MIU-B9-R9u" firstAttribute="centerX" secondItem="MUu-px-9az" secondAttribute="centerX" id="vt8-Hk-IgL"/>
+                        <constraint firstAttribute="trailing" secondItem="6Zp-xF-bD1" secondAttribute="trailing" id="x9M-yH-dab"/>
+                        <constraint firstItem="6Zp-xF-bD1" firstAttribute="trailing" secondItem="MUu-px-9az" secondAttribute="trailing" id="z76-ya-OTc"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="cpI-4y-jih"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sLM-Pd-LEl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GS9-S8-N4L"/>
+                <constraint firstAttribute="bottom" secondItem="sLM-Pd-LEl" secondAttribute="bottom" id="kDO-xh-pDJ"/>
+                <constraint firstAttribute="trailing" secondItem="sLM-Pd-LEl" secondAttribute="trailing" id="xjA-Os-ZKa"/>
+                <constraint firstItem="sLM-Pd-LEl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yck-O0-0HY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LoadingImage.png" width="459" height="468"/>
+        <image name="background.png" width="113" height="111"/>
+        <image name="logo-new.png" width="1460" height="705"/>
+    </resources>
+</document>

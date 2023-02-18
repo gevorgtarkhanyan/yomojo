@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddServiceSelectPackViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="vRE-WP-LR7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Gmd-QN-wGg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVM-TU-ejV">
+                    <rect key="frame" x="0.0" y="40" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-EF-g0n">
+                    <rect key="frame" x="306" y="40" width="69" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="vcO-nf-uOo"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epj-A1-4Pw">
+                    <rect key="frame" x="71" y="715" width="232" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="IzQ-KM-dxQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Next" backgroundImage="buttonBG.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-cI-72v">
+                    <rect key="frame" x="5" y="35" width="20" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="DR8-En-jIW"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="arrowleft.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UZf-cI-72v" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="5" id="4ob-7L-hti"/>
+                <constraint firstItem="Epj-A1-4Pw" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="58a-De-eDe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Jw1-EF-g0n" secondAttribute="bottom" constant="718" id="5mI-wj-3pw"/>
+                <constraint firstItem="Epj-A1-4Pw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="71" id="6xa-WP-OoZ"/>
+                <constraint firstItem="BVM-TU-ejV" firstAttribute="top" secondItem="Jw1-EF-g0n" secondAttribute="top" id="AJj-ue-upC"/>
+                <constraint firstItem="vRE-WP-LR7" firstAttribute="trailing" secondItem="BVM-TU-ejV" secondAttribute="trailing" id="BmK-fV-q1W"/>
+                <constraint firstItem="UZf-cI-72v" firstAttribute="centerY" secondItem="Jw1-EF-g0n" secondAttribute="centerY" id="CYi-z9-QYt"/>
+                <constraint firstItem="UZf-cI-72v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="VL8-Ft-xRM"/>
+                <constraint firstItem="vRE-WP-LR7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wt0-TR-bBu"/>
+                <constraint firstItem="BVM-TU-ejV" firstAttribute="centerX" secondItem="Epj-A1-4Pw" secondAttribute="centerX" id="cce-6W-sgN"/>
+                <constraint firstItem="BVM-TU-ejV" firstAttribute="centerY" secondItem="UZf-cI-72v" secondAttribute="centerY" id="fNO-QC-f07"/>
+                <constraint firstAttribute="trailing" secondItem="vRE-WP-LR7" secondAttribute="trailing" id="gAy-t4-vcu"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="UZf-cI-72v" secondAttribute="bottom" constant="713" id="gd0-f2-TI6"/>
+                <constraint firstItem="vRE-WP-LR7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mBl-0P-X7D"/>
+                <constraint firstItem="vRE-WP-LR7" firstAttribute="leading" secondItem="BVM-TU-ejV" secondAttribute="leading" id="qqU-8V-C27"/>
+                <constraint firstItem="Jw1-EF-g0n" firstAttribute="trailing" secondItem="BVM-TU-ejV" secondAttribute="trailing" id="vcB-SO-3kQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowleft.png" width="38" height="65"/>
+        <image name="background.png" width="113" height="111"/>
+        <image name="buttonBG.png" width="518" height="117"/>
+        <image name="logo.png" width="164" height="58"/>
+    </resources>
+</document>

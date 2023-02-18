@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="ChangePlanThisMonthTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQz-in-8rD">
+                        <rect key="frame" x="8" y="0.0" width="304" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblExpiry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrq-wp-3si">
+                        <rect key="frame" x="0.0" y="70" width="320" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblPlan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTk-13-t7F">
+                        <rect key="frame" x="56" y="35" width="164" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="wyg-0V-Acz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblPrice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azq-UR-CNG">
+                        <rect key="frame" x="241" y="35" width="71" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="MnG-mz-yrd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_data.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWy-cG-nTu">
+                        <rect key="frame" x="8" y="25" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="tuV-GD-x22"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qQz-in-8rD" firstAttribute="leading" secondItem="cWy-cG-nTu" secondAttribute="leading" id="1lq-Sj-DoC"/>
+                    <constraint firstItem="azq-UR-CNG" firstAttribute="leading" secondItem="aTk-13-t7F" secondAttribute="trailing" constant="21" id="2Ex-Ap-qTJ"/>
+                    <constraint firstItem="qQz-in-8rD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3do-bi-Zyb"/>
+                    <constraint firstItem="rrq-wp-3si" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="NwF-32-iOj"/>
+                    <constraint firstItem="aTk-13-t7F" firstAttribute="top" secondItem="qQz-in-8rD" secondAttribute="bottom" constant="8" symbolic="YES" id="O08-m4-VBT"/>
+                    <constraint firstItem="rrq-wp-3si" firstAttribute="top" secondItem="aTk-13-t7F" secondAttribute="bottom" constant="14" id="QPh-Wx-iIt"/>
+                    <constraint firstItem="qQz-in-8rD" firstAttribute="centerX" secondItem="rrq-wp-3si" secondAttribute="centerX" id="Vww-ar-LJs"/>
+                    <constraint firstItem="qQz-in-8rD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YL5-4g-Mcl"/>
+                    <constraint firstItem="aTk-13-t7F" firstAttribute="leading" secondItem="cWy-cG-nTu" secondAttribute="trailing" constant="8" symbolic="YES" id="ZCy-VG-5BW"/>
+                    <constraint firstItem="qQz-in-8rD" firstAttribute="trailing" secondItem="azq-UR-CNG" secondAttribute="trailing" id="cKD-Dk-uzh"/>
+                    <constraint firstItem="aTk-13-t7F" firstAttribute="baseline" secondItem="azq-UR-CNG" secondAttribute="baseline" id="cYb-Yr-qxB"/>
+                    <constraint firstAttribute="trailing" secondItem="rrq-wp-3si" secondAttribute="trailing" id="fbl-6c-Hyh"/>
+                    <constraint firstItem="rrq-wp-3si" firstAttribute="top" secondItem="cWy-cG-nTu" secondAttribute="bottom" constant="5" id="g9d-5V-Bei"/>
+                    <constraint firstItem="cWy-cG-nTu" firstAttribute="centerY" secondItem="aTk-13-t7F" secondAttribute="centerY" id="kI0-yb-R85"/>
+                    <constraint firstItem="cWy-cG-nTu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="n3M-E4-WCq"/>
+                    <constraint firstItem="aTk-13-t7F" firstAttribute="firstBaseline" secondItem="azq-UR-CNG" secondAttribute="firstBaseline" id="pgv-oD-yQD"/>
+                    <constraint firstItem="rrq-wp-3si" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qco-XV-b3f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImg" destination="cWy-cG-nTu" id="KxU-iN-JAR"/>
+                <outlet property="lblExpiry" destination="rrq-wp-3si" id="N9H-Rg-ejW"/>
+                <outlet property="lblPlaneName" destination="aTk-13-t7F" id="El2-Z1-WEH"/>
+                <outlet property="lblPrice" destination="azq-UR-CNG" id="bh5-zC-p8T"/>
+                <outlet property="lblTitle" destination="qQz-in-8rD" id="hxM-wU-RP1"/>
+            </connections>
+            <point key="canvasLocation" x="-181" y="28"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_data.png" width="105" height="105"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountListViewController">
+            <connections>
+                <outlet property="MIMtableView" destination="iFr-Kf-SLE" id="r2a-Kn-hfe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="5k1-Ju-EKw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                </imageView>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-vz-oJx">
+                    <rect key="frame" x="16" y="39" width="343" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-new.png" translatesAutoresizingMaskIntoConstraints="NO" id="vLm-DM-jfI">
+                    <rect key="frame" x="300" y="39" width="75" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="0CY-ea-b7A"/>
+                        <constraint firstAttribute="width" constant="75" id="Ad7-vH-UeX"/>
+                    </constraints>
+                </imageView>
+                <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iFr-Kf-SLE">
+                    <rect key="frame" x="16" y="72" width="343" height="595"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rFu-4P-Pw2"/>
+                        <outlet property="delegate" destination="-1" id="VkG-iI-mAj"/>
+                    </connections>
+                </tableView>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzS-rI-h7H">
+                    <rect key="frame" x="16" y="34" width="20" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="1ep-EJ-cvy"/>
+                    </constraints>
+                    <state key="normal" image="arrowleft.png"/>
+                    <connections>
+                        <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="8o1-Jt-UZ1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gLP-vz-oJx" firstAttribute="top" secondItem="vLm-DM-jfI" secondAttribute="top" id="1Hv-2e-6Cs"/>
+                <constraint firstItem="iFr-Kf-SLE" firstAttribute="top" secondItem="5k1-Ju-EKw" secondAttribute="bottom" constant="2" id="3vW-C0-xkE"/>
+                <constraint firstAttribute="trailing" secondItem="5k1-Ju-EKw" secondAttribute="trailing" id="Db6-dO-MyI"/>
+                <constraint firstItem="gLP-vz-oJx" firstAttribute="centerY" secondItem="vLm-DM-jfI" secondAttribute="centerY" id="F8M-6O-jEo"/>
+                <constraint firstItem="gLP-vz-oJx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="39" id="GB5-nO-4Su"/>
+                <constraint firstItem="iFr-Kf-SLE" firstAttribute="top" secondItem="gLP-vz-oJx" secondAttribute="bottom" constant="13" id="HGe-bQ-smt"/>
+                <constraint firstItem="TzS-rI-h7H" firstAttribute="centerY" secondItem="gLP-vz-oJx" secondAttribute="centerY" id="T16-vW-sbA"/>
+                <constraint firstItem="gLP-vz-oJx" firstAttribute="leading" secondItem="iFr-Kf-SLE" secondAttribute="leading" id="Ws7-Hr-j6r"/>
+                <constraint firstItem="iFr-Kf-SLE" firstAttribute="top" secondItem="TzS-rI-h7H" secondAttribute="bottom" constant="8" symbolic="YES" id="bBe-i0-4VQ"/>
+                <constraint firstItem="5k1-Ju-EKw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="e3x-94-p4K"/>
+                <constraint firstItem="TzS-rI-h7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="ehq-91-tVV"/>
+                <constraint firstItem="5k1-Ju-EKw" firstAttribute="centerX" secondItem="gLP-vz-oJx" secondAttribute="centerX" id="iBe-cb-aMR"/>
+                <constraint firstAttribute="bottom" secondItem="iFr-Kf-SLE" secondAttribute="bottom" id="lXb-eA-xWt"/>
+                <constraint firstItem="gLP-vz-oJx" firstAttribute="trailing" secondItem="iFr-Kf-SLE" secondAttribute="trailing" id="sOQ-ea-4oq"/>
+                <constraint firstItem="5k1-Ju-EKw" firstAttribute="trailing" secondItem="vLm-DM-jfI" secondAttribute="trailing" id="vgU-m7-etN"/>
+                <constraint firstItem="TzS-rI-h7H" firstAttribute="leading" secondItem="gLP-vz-oJx" secondAttribute="leading" id="yQx-mD-NPr"/>
+                <constraint firstItem="5k1-Ju-EKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zsT-0h-wS7"/>
+            </constraints>
+            <point key="canvasLocation" x="341" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowleft.png" width="38" height="65"/>
+        <image name="logo-new.png" width="1460" height="705"/>
+        <image name="profileBG.png" width="1080" height="928"/>
+    </resources>
+</document>
